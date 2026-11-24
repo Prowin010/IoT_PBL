@@ -1,15 +1,18 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+//Pin assignment
+#define HELP_BUTTON 14
+#define GREEN_LED 32
+#define RED_LED 33
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  pinMode(HELP_BUTTON, INPUT_PULLUP);
+  pinMode(GREEN_LED, OUTPUT);
+  pinMode(RED_LED);
+  
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  delay(200);
+  
 }
 
